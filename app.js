@@ -201,6 +201,6 @@ io.on('connection', function(socket){
     });
 });
 
-http.listen(8080, '127.0.0.1',  function(){
+http.listen(8080, '0.0.0.0',  function(){
     console.log('HTTP Server: http://127.0.0.1:8080/');
 });
