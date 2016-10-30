@@ -1,0 +1,15 @@
+{
+  "name": "huenodejscontrol",
+  "description": "NO",
+  "license": "MIT",
+  "repository" : {
+    "type": "git",
+    "url": "git+https://github.com/wrxavex/HueNodeJsControl.git"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "latest",
+    "express": "^4.14.0",
+    "socket.io": "^1.5.1"
+  }
+}

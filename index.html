@@ -12,6 +12,10 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -21,19 +25,318 @@
 
     <script>
         var socket = io();
+
+        socket.on('light_1', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_1_button').innerHTML = '1 開';
+                document.getElementById('light_1_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_1_button').innerHTML = '1 關';
+                document.getElementById('light_1_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_2', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_2_button').innerHTML = '2 開';
+                document.getElementById('light_2_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_2_button').innerHTML = '2 關';
+                document.getElementById('light_2_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_3', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_3_button').innerHTML = '3 開';
+                document.getElementById('light_3_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_3_button').innerHTML = '3 關';
+                document.getElementById('light_3_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_4', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_4_button').innerHTML = '4 開';
+                document.getElementById('light_4_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_4_button').innerHTML = '4 關';
+                document.getElementById('light_4_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_5', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_5_button').innerHTML = '5 開';
+                document.getElementById('light_5_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_5_button').innerHTML = '5 關';
+                document.getElementById('light_5_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_6', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_6_button').innerHTML = '6 開';
+                document.getElementById('light_6_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_6_button').innerHTML = '6 關';
+                document.getElementById('light_6_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_7', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_7_button').innerHTML = '7 開';
+                document.getElementById('light_7_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_7_button').innerHTML = '7 關';
+                document.getElementById('light_7_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_8', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_8_button').innerHTML = '8 開';
+                document.getElementById('light_8_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_8_button').innerHTML = '8 關';
+                document.getElementById('light_8_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_9', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_9_button').innerHTML = '9 開';
+                document.getElementById('light_9_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_9_button').innerHTML = '9 關';
+                document.getElementById('light_9_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_10', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_10_button').innerHTML = '10 開';
+                document.getElementById('light_10_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_10_button').innerHTML = '10 關';
+                document.getElementById('light_10_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_11', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_11_button').innerHTML = '11 開';
+                document.getElementById('light_11_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_11_button').innerHTML = '11 關';
+                document.getElementById('light_11_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_12', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_12_button').innerHTML = '12 開';
+                document.getElementById('light_12_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_12_button').innerHTML = '12 關';
+                document.getElementById('light_12_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_13', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_13_button').innerHTML = '13 開';
+                document.getElementById('light_13_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_13_button').innerHTML = '13 關';
+                document.getElementById('light_13_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_14', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_14_button').innerHTML = '14 開';
+                document.getElementById('light_14_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_14_button').innerHTML = '14 關';
+                document.getElementById('light_14_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
+        socket.on('light_15', function(data){
+            console.log(data);
+            if(data == 'on'){
+                document.getElementById('light_15_button').innerHTML = '15 開';
+                document.getElementById('light_15_button').className = 'btn btn-default btn-lg';
+            }
+            if(data == 'off'){
+                document.getElementById('light_15_button').innerHTML = '15 關';
+                document.getElementById('light_15_button').className = 'btn btn-primary btn-lg';
+            }
+        });
+
         function e()
         {
             socket.emit('light_control', document.getElementById('control_message').value);
+        }
+
+        function on()
+        {
+            socket.emit('light_control', "on");
+        }
+        function top_on()
+        {
+            socket.emit('light_control', "top_on");
+        }
+        function top_off()
+        {
+            socket.emit('light_control', "top_off");
+        }
+        function off()
+        {
+            socket.emit('light_control', "off");
+        }
+        function dark()
+        {
+            socket.emit('light_control', "dark");
+        }
+        function bright()
+        {
+            socket.emit('light_control', "bright");
+        }
+        function switch1()
+        {
+            socket.emit('light_control', "switch_1");
+        }
+        function switch2()
+        {
+            socket.emit('light_control', "switch_2");
+        }
+        function switch3()
+        {
+            socket.emit('light_control', "switch_3");
+        }
+        function switch4()
+        {
+            socket.emit('light_control', "switch_4");
+        }
+        function switch5()
+        {
+            socket.emit('light_control', "switch_5");
+        }
+        function switch6()
+        {
+            socket.emit('light_control', "switch_6");
+        }
+
+        function switch7()
+        {
+            socket.emit('light_control', "switch_7");
+        }
+
+        function switch8()
+        {
+            socket.emit('light_control', "switch_8");
+        }
+
+        function switch9()
+        {
+            socket.emit('light_control', "switch_9");
+        }
+        function switch10()
+        {
+            socket.emit('light_control', "switch_10");
+        }
+        function switch11()
+        {
+            socket.emit('light_control', "switch_11");
+        }
+        function switch12()
+        {
+            socket.emit('light_control', "switch_12");
+        }
+        function switch13()
+        {
+            socket.emit('light_control', "switch_13");
+        }
+        function switch14()
+        {
+            socket.emit('light_control', "switch_14");
+        }
+        function switch15()
+        {
+            socket.emit('light_control', "switch_15");
         }
     </script>
 
 </head>
 <body>
 <div class="container-fluid">
+    <h3>指令碼控制</h3>
     <input  class="form-control" id="control_message" autocomplete="off"/>
     <button type="button" class="btn btn-primary btn-lg btn-block" onclick="e()" >Send Control</button>
-</div>
+    <h3>群控指令</h3>
+    <h4>天花板燈</h4>
+    <button type="button" class="btn btn-primary btn-lg " onclick="top_on()" >Top on</button>
+    <button type="button" class="btn btn-primary btn-lg " onclick="top_off()" >Top off</button>
+    <h4>排燈</h4>
+    <button type="button" class="btn btn-primary btn-lg " onclick="on()" >Side on</button>
+    <button type="button" class="btn btn-primary btn-lg " onclick="off()" >Side off</button>
+    <button type="button" class="btn btn-primary btn-lg " onclick="dark()" >Side dark</button>
+    <button type="button" class="btn btn-primary btn-lg " onclick="bright()" >Side bright</button>
+    <h3>獨立燈光開關控制</h3>
+    <h4>天花板燈</h4>
+    <button id="light_1_button" type="button" class="btn btn-primary btn-lg " onclick="switch1()" > 1</button>
+    <button id="light_2_button" type="button" class="btn btn-primary btn-lg " onclick="switch2()" > 2</button>
+    <button id="light_3_button" type="button" class="btn btn-primary btn-lg " onclick="switch3()" > 3</button>
+    <button id="light_4_button" type="button" class="btn btn-primary btn-lg " onclick="switch4()" > 4</button>
+    <button id="light_5_button" type="button" class="btn btn-primary btn-lg " onclick="switch5()" > 5</button>
+    <button id="light_6_button" type="button" class="btn btn-primary btn-lg " onclick="switch6()" > 6</button>
+    <h4>ikea</h4>
+    <button id="light_7_button" type="button" class="btn btn-primary btn-lg " onclick="switch7()" > 7</button>
+    <button id="light_8_button" type="button" class="btn btn-primary btn-lg " onclick="switch8()" > 8</button>
+    <h4>排燈</h4>
+    <button id="light_9_button" type="button" class="btn btn-primary btn-lg " onclick="switch9()" > 9</button>
+    <button id="light_10_button" type="button" class="btn btn-primary btn-lg " onclick="switch10()" > 10</button>
+    <button id="light_11_button" type="button" class="btn btn-primary btn-lg " onclick="switch11()" > 11</button>
+    <button id="light_12_button" type="button" class="btn btn-primary btn-lg " onclick="switch12()" > 12</button>
+    <button id="light_13_button" type="button" class="btn btn-primary btn-lg " onclick="switch13()" > 13</button>
+    <button id="light_14_button" type="button" class="btn btn-primary btn-lg " onclick="switch14()" > 14</button>
+    <button id="light_15_button" type="button" class="btn btn-primary btn-lg " onclick="switch15()" > 15</button>
 
+
+</div>
 
 
 </body>
