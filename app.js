@@ -117,12 +117,10 @@ function light_sat_high(i) {
 
 
 function light_run() {
-    setInterval(function() {
         for (i = 9; i <= 15; i++) {
             light_blue(i);
             light_white(i);
         }
-    }, 1800);
 }
 
 
