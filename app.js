@@ -109,7 +109,7 @@ function light_bright(i) {
             .done();
         console.log('dark');
         console.log(i);
-    }, (i-8) * 150 + 300);
+    }, i * 150 + 300);
 }
 
 function light_blue(i) {
@@ -203,7 +203,7 @@ function light_dark_all() {
 }
 
 function light_bright_all() {
-    for (i = 9; i<=15; i++){
+    for (i = 1; i<=15; i++){
         light_bright(i);
     }
 }
